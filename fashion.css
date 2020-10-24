@@ -1,0 +1,21 @@
+header nav ul{
+	 text-align: center;
+}
+header nav ul li {
+   display: inline; 
+   font-size: 20px; 
+   font-family: 'Lucida Handwriting',Courier New, monospace;
+   background-color: gray;
+   padding: 0px 30px; 
+   margin: 0px;
+}
+
+header nav ul li a {
+   text-decoration: none; 
+   color: white;
+}
+
+
+header nav ul li a:hover {
+   color: rgb(255,153,51);
+}

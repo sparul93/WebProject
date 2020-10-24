@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+   Web Project: D Phenomenon Music
+   Author: Parul
+   
+
+-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>D Phenomenon Music</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="js\stats.js" defer=""></script>
+  <script src="js\clock.js" defer=""></script>
+  <script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+
+</script>
+	
+</head>
+<body onload="startTime()">
+
+<div class="topnav">
+  <a href="Contact.html">Contact</a>
+  <a href="releases.html">Releases</a>
+  <a href="Photos.html">Photos</a>
+  <a href="About.html">About</a>
+  <a class="active" href="#home">Home</a>
+</div>
+
+
+  <div class="pimg1">
+    <div class="ptext">
+      <span class="border">
+        D Phenomenon Music
+      </span>
+    </div>
+  </div>
+
+  <section class="section section-light">
+    <h2>D Phenomenon</h2>
+    <p>
+      'D Phenomenon', real name 'Divyansh' is a Punjabi music director. He is most known for working with a number of Punjabi singers such as Amrit Gill, The Late Kaka Bhaniawala, Navdeep Wadali, Pratham Verma, Akash Mahal, Nahil Chauhan, Fateh Kahlon and many more. He released his first debut song "TAUR JATT DI" under the record label Xero Creatorz in July 2018 which has smashing "110,330 views" on YouTube. Since releasing his first track in which he featured his own vocals also as a part of Rap Verse in the song, he had been working with a number of singers. He is a music director too, but is also known for his bilingual Rap which features words from English and Punjabi Language.
+    </p>
+  </section>
+
+  <div class="pimg2">
+    <div class="ptext">
+      <span class="border trans">
+        Latest Releases
+      </span>
+    </div>
+  </div>
+
+  <section class="section section-dark">
+    <h2>Video Gallery</h2>
+    <p>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/AxPC1_wck0I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/PV5h550VX9Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </p>
+  </section>
+
+  <div class="pimg3">
+    <div class="ptext">
+      <span class="border trans">
+        Want to See Live?
+      </span>
+    </div>
+  </div>
+
+  <section class="section section-dark">
+    <h2>Events and Bookings</h2>
+    <p>
+     <a href="Contact.html">
+<img alt="Book Now" src="Book-now.png">
+</a>
+	  
+    </p>
+	<div id="txt" align="center"></div>
+  </section>
+
+  <div class="pimg1">
+    <div class="ptext">
+      <span class="border">
+        &#x00A9;3R Records 
+		<br/><br/><br/>  
+
+      </span>
+    </div>
+  </div>
+  
+<footer class="foot">
+  <a href="https://www.facebook.com/divyanshphenomenon/"><img src="fb.png" height="50" width="50"></a>
+  <a href="https://www.instagram.com/d_phenomenon_music/?hl=en"><img src="insta.png" height="50" width="50"></a>
+  <a href="https://twitter.com/DJ_Phenomena/"><img src="twitter.png" height="50" width="50"></a>
+  <address>&#x00A9;3R Records - &#x00A9; Xero Creators. All Rights Reserved.</address>
+<p class="lastmodified">The page was Last Modified on </p>
+                <p id="clock">The Current Time Is </p>
+
+  <a href="refpage.html"><I>Cross-Reference Page</I></a>
+  </footer>
+  
+</body>
+</html>

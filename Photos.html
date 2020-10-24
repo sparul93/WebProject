@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+   Web Project: D Phenomenon Music
+   Author: Parul
+   
+-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>D Phenomenon Music</title>
+  <link rel="stylesheet" href="css/photosstyle.css">
+  <script src="js\stats.js" defer=""></script>
+  <script src="js\clock.js" defer=""></script>
+  
+  
+</head>
+<body>
+
+<div class="topnav">
+  <a href="Contact.html">Contact</a>
+  <a href="releases.html">Releases</a>
+  <a class="active" href="#home">Photos</a>
+  <a href="About.html">About</a>
+  <a href="Home.html">Home</a>
+</div>
+
+
+  <section class="section section-light">
+    <h2>Photo Gallery</h2>
+    <p>
+	Click on the 'Next' and 'Previous' buttons to Navigate Through Images.
+	<br>All images are copyrighted.
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 11</div>
+    <img src="photo1.jpg" style="width:100%">
+    <div class="text">PhotoShoot 2018 &#x00A9;<I> William Vision Photo</I></div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 11</div>
+    <img src="photo2.jpg" style="width:100%">
+    <div class="text">PhotoShoot 2018 &#x00A9;<I> William Vision Photo</I></div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 11</div>
+    <img src="photo3.jpg" style="width:100%">
+    <div class="text">PhotoShoot 2018 &#x00A9;<I> William Vision Photo</I></div>
+  </div>
+  
+    <div class="mySlides fade">
+    <div class="numbertext">4 / 11</div>
+    <img src="photo4.jpg" style="width:100%">
+    <div class="text">PhotoShoot 2018 &#x00A9;<I> William Vision Photo</I></div>
+  </div>
+  
+    <div class="mySlides fade">
+    <div class="numbertext">5 / 11</div>
+    <img src="photo5.jpg" style="width:100%">
+    <div class="text">PhotoShoot 2018 &#x00A9;<I> William Vision Photo</I></div>
+  </div>
+  
+    <div class="mySlides fade">
+    <div class="numbertext">6 / 11</div>
+    <img src="photo6.jpg" style="width:100%">
+    <div class="text">PhotoShoot 2018 &#x00A9;<I> William Vision Photo</I></div>
+  </div>
+  
+    <div class="mySlides fade">
+    <div class="numbertext">7 / 11</div>
+    <img src="photo7.jpg" style="width:100%">
+    <div class="text">PhotoShoot 2018 &#x00A9;<I> William Vision Photo</I></div>
+  </div>
+  
+    <div class="mySlides fade">
+    <div class="numbertext">8 / 11</div>
+    <img src="photo8.jpg" style="width:100%">
+    <div class="text">PhotoShoot 2018 &#x00A9;<I> William Vision Photo</I></div>
+  </div>
+  
+    <div class="mySlides fade">
+    <div class="numbertext">9 / 11</div>
+    <img src="photo9.jpg" style="width:100%">
+    <div class="text">PhotoShoot 2018 &#x00A9;<I> William Vision Photo</I></div>
+  </div>
+  
+    <div class="mySlides fade">
+    <div class="numbertext">10 / 11</div>
+    <img src="photo10.jpg" style="width:100%">
+    <div class="text">PhotoShoot 2018 &#x00A9;<I> William Vision Photo</I></div>
+  </div>
+
+      <div class="mySlides fade">
+    <div class="numbertext">11 / 11</div>
+    <img src="photo11.jpg" style="width:100%">
+    <div class="text">PhotoShoot 2018 &#x00A9;<I> William Vision Photo</I></div>
+  </div>
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span> 
+  <span class="dot" onclick="currentSlide(7)"></span> 
+  <span class="dot" onclick="currentSlide(8)"></span> 
+  <span class="dot" onclick="currentSlide(9)"></span> 
+  <span class="dot" onclick="currentSlide(10)"></span> 
+  <span class="dot" onclick="currentSlide(11)"></span> 
+</div>
+
+    </p>
+  </section>
+
+<footer class="foot">
+  <a href="https://www.facebook.com/divyanshphenomenon/"><img src="fb.png" height="50" width="50"></a>
+  <a href="https://www.instagram.com/d_phenomenon_music/?hl=en"><img src="insta.png" height="50" width="50"></a>
+  <a href="https://twitter.com/DJ_Phenomena/"><img src="twitter.png" height="50" width="50"></a>
+  <address>&#x00A9;3R Records - &#x00A9; Xero Creators. All Rights Reserved.</address>
+  <p class="lastmodified">The page was Last Modified on </p>
+                <p id="clock">The Current Time Is </p>
+  <a href="refpage.html"><I>Cross-Reference Page</I></a>
+  </footer>
+  
+  
+  <script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</body>
+</html>
